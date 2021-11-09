@@ -1,0 +1,61 @@
+$df-fs: 14px;
+$mobi-fs: 16;
+$mw-tablet: 1024px;
+$mw-mobile: 991px;
+$screen-mobile: 991px;
+$screen-mw-desktop: ($screen-mobile + 1);
+
+$font: "Robito", sans-serif;
+$primary-color: #FED100;
+$black-color: #000000;
+$white-color: #ffffff;
+$primary-fz: 14px;
+$second-fz: 16px;
+
+.container {
+    max-width: rem(1606);
+    padding-left: rem(10);
+    padding-right: rem(10);
+
+    @media (max-width: $screen-mobile) {
+        max-width: 100%;
+        padding-left: rem(20);
+        padding-right: rem(20);
+    }
+
+    .row {
+        margin-right: rem(-10);
+        margin-left: rem(-10);
+        @media (max-width: $screen-mobile) {
+            margin-right: rem(-20);
+            margin-left: rem(-20)
+        }
+    }
+
+    [class^="col-"],
+    [class*=" col-"] {
+        padding-right: rem(10);
+        padding-left: rem(10);
+        @media (max-width: $screen-mobile) {
+            padding-right: rem(20);
+            padding-left: rem(20);  
+        }
+
+        &.no-padding {
+            padding: 0;
+        }
+    }
+    
+}
+
+.visible-desktop {
+    @media(max-width: $screen-mobile) {
+        display: none !important;
+    }
+}
+
+.visible-mobi {
+    @media(min-width: $screen-mw-desktop) {
+        display: none !important;
+    }
+}

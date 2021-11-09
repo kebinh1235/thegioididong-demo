@@ -1,0 +1,40 @@
+.banner {
+    &__outside{
+    background: rgb(255, 255, 42);
+    height: 45px;
+  }
+}
+.header {
+  &__top {
+    color: $white-color;
+    background: $black-color;
+  }
+  &__logo {
+    width: 235px;
+  }
+  &__location {
+    font-size: $ss-fs;
+    span {
+      font-size: $s-fs;
+      color: $primary-color;
+    }
+  }
+  &__search {
+    
+  }
+  &__cart {
+    
+  }
+  &__history-cart {
+    
+  }
+  &__hot {
+    
+  }
+  &__question {
+   
+    &-link {
+
+    }
+  }
+}

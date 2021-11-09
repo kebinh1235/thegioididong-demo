@@ -1,0 +1,33 @@
+html {
+box-sizing: border-box;
+}
+*{
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style: none;
+}
+*,*:before,*:after {
+box-sizing: border-box;
+}
+input,
+textarea,
+select,
+button{
+outline: none;
+}
+input{
+line-height: normal;
+}
+label,
+button{
+cursor: pointer;
+}
+a, a:hover {
+    text-decoration: none;
+    color: initial;
+}
+img {
+display: block;
+max-width: 100%;
+}

@@ -1,0 +1,48 @@
+.banner {
+    &__outside{
+    background: rgb(255, 255, 42);
+    height: 45px;
+  }
+}
+.header {
+  &__top-bg {
+    background: $black-color;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+    padding: 10px 0;;
+  }
+  &__logo {
+    width: 160px;
+  }
+  &__location {
+    color: $white-color;
+    font-size: $ss-fs;
+    span {
+      font-size: $s-fs;
+      color: $primary-color;
+      display: block;
+    }
+  }
+  &__search {
+    
+  }
+  &__cart {
+    
+  }
+  &__history-cart {
+    
+  }
+  &__hot {
+    
+  }
+  &__question {
+   
+    &-link {
+
+    }
+  }
+}

@@ -1,0 +1,26 @@
+body {
+    font-family: $font;
+    font-size: 14px;
+    line-height: 1;
+}
+.container {
+    max-width: 1200px;
+    padding: 0;
+}
+.seperator-y {
+    background-color: #232323;
+    height: 40px;
+    width: 1px;
+}
+.btn.btn-primary {
+    background: $primary-btn-color;
+    border: none;
+    outline: none;
+    width: 100%;
+    -webkit-tap-highlight-color: none;
+    text-transform: uppercase;
+}
+.btn:focus {
+    outline: none;
+    border: none;
+}

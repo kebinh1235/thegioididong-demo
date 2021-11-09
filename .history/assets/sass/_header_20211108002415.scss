@@ -1,0 +1,90 @@
+.banner {
+    &__outside{
+    background: rgb(255, 255, 42);
+    height: 45px;
+  }
+}
+.header {
+  &__top-bg {
+    background: $black-color;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+    padding: 5px 0;
+    gap: 0 12px;
+    font-size: $s-fs;
+  }
+  &__logo {
+    width: 160px;
+  }
+  &__location {
+    color: $white-color;
+    font-size: $ss-fs;
+    width: 140px;
+    span {
+      margin-top: 2px;
+      font-size: $s-fs;
+      color: $primary-color;
+      display: block;
+      font-size: 11px;
+    }
+  }
+  &__search {
+    position: relative;
+    width: 225px;
+    input {
+      border-radius: $primary-radius;
+      width: 100%;
+      padding: 8px 10px;
+      border: none;
+      outline: none;
+      font-size: $s-fs;
+    }
+    &-btn {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      background: transparent;
+    }
+  }
+  &__cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    border: 1
+px
+ solid #ffffff;
+    padding: 8
+px
+ 5
+px
+;
+    width: 100
+px
+;
+    gap: 0 5
+px
+;
+    border-radius: 5
+px
+;
+  }
+  &__history-cart {
+    
+  }
+  &__hot {
+    
+  }
+  &__question {
+   
+    &-link {
+
+    }
+  }
+}

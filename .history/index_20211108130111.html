@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thế Giới Di Động - Demo</title>
+    <link rel="icon" href="./assets/images/icon-logo.png" type="image/x-icon" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./assets/font-icon/fontawesome-free-5.15.4-web/css/all.css"
+    />
+    <!-- Slick Slider CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <!--Banner quảng cáo-->
+        <section class="banner__outside">
+          <div class="container">
+            <a href="#" class="banner__outsite-img">
+              <img
+                src="https://cdn.tgdd.vn/2021/10/banner/1200-44-1200x44.png"
+                alt="Deal Banner Giá Rẻ"
+                title="Deal Banner Giá Rẻ"
+              />
+            </a>
+          </div>
+        </section>
+        <section class="header__top-bg">
+          <div class="container">
+            <div class="header__top">
+              <div class="header__logo">
+                <img
+                  src="./assets/images/primary-logo.png"
+                  alt="Thế giới di động"
+                />
+              </div>
+              <span class="seperator-y"></span>
+              <a href="#" class="header__location" data-toggle="modal" data-target="#locationModalCenter">
+                Xem giá, khuyến mãi tại
+                <span>
+                  Hồ Chí Minh
+                  <i class="fas fa-sort-down"></i>
+                </span>
+              </a>
+              <!-- Header Modal -->
+              <div class="modal fade" id="locationModalCenter" tabindex="-1" role="dialog" aria-labelledby="locationModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="header__modal-heading">
+                      <p class="header__modal-title">
+                        Chọn địa chỉ nhận hàng
+                      </p>
+                      <button type="button" class="header__modal-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                          <i class="fas fa-times"></i>
+                          Đóng
+                        </span>
+                      </button>  
+                    </div>
+                    <div class="header__modal-body">
+                      <p class="header__modal-body-title"><strong>Chọn đầy đủ địa chỉ nhận hàng</strong> để biết chính xác thời gian giao</p>
+                      <form action="#"></form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="seperator-y"></span>
+              <div class="header__search">
+                <input
+                  type="text"
+                  class="rounded"
+                  placeholder="Bạn tìm gì..."
+                />
+                <button class="header__search-btn">
+                  <i class="fas fa-search header__search-btn-icon"></i>
+                </button>
+              </div>
+              <span class="seperator-y"></span>
+              <a href="#" class="header__cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Giỏ hàng</span>
+              </a>
+              <span class="seperator-y"></span>
+              <a href="#" class="header__history-cart"> Lịch sử đơn hàng </a>
+              <span class="seperator-y"></span>
+              <a href="#" class="header__hot">
+                <div class="header__hot-dot-new">
+                  <div class="header__hot-dot-new-animation"></div>
+                </div>
+                Mobifone trả sau đến hạn thanh toán. Mua thẻ nạp ngay!
+              </a>
+              <span class="seperator-y"></span>
+              <div class="header__question">
+                <a class="header__question-link" href="#">24h Công Nghệ</a>
+                <span class="seperator-y"></span>
+
+                <a class="header__question-link" href="#">Hỏi Đáp</a>
+                <span class="seperator-y"></span>
+
+                <a class="header__question-link" href="#">Game App</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="header__menu"></div>
+      </header>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- JavaScript -->
+    <script src="./assets/scripts/app.js"></script>
+  </body>
+</html>

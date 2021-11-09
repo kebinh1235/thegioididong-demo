@@ -1,0 +1,16 @@
+.banner {
+    &__primary {
+        
+    }
+    &__primary-small {
+        margin-top: 10px;
+    }
+    &__primary.slick-initialized .slick-arrow {
+        border: none;
+        outline: none;
+        padding: 10px;
+        font-size: 20px;
+        background: $white-color;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}

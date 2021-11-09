@@ -1,0 +1,26 @@
+.banner {
+    &__primary {
+        
+    }
+    &__primary-small {
+        margin-top: 10px;
+    }
+    &__primary.slick-initialized .slick-arrow {
+        border: none;
+        outline: none;
+        padding: 20px 10px;
+        font-size: 20px;
+        background: $white-color;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        will-change: transform;
+    }
+    &__primary.slick-initialized .slick-prev {
+        left: 0;
+    }
+    &__primary.slick-initialized .slick-next {
+        right: 0;
+    }
+}

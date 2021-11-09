@@ -1,0 +1,20 @@
+html {
+    height: 100%;
+    width: 100%;
+    font-size: vw($df-fs, 1920);
+
+    @media (max-width: 991px) {
+        font-size: vw($df-fs, 991);
+    }
+
+    @media (max-width: 575px) {
+        font-size: vw($df-fs, 575);
+    }
+
+    @media (min-width: 1920px) {
+        font-size: 16px;
+    }
+}
+body {
+    font-family: $font;
+}

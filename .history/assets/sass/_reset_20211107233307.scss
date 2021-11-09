@@ -1,0 +1,60 @@
+.visible-desktop {
+    @media(max-width: $screen-mobile) {
+        display: none !important;
+    }
+}
+
+.visible-mobi {
+    @media(min-width: $screen-mw-desktop) {
+        display: none !important;
+    }
+}
+
+img,
+img.img-responsive {
+    max-width: none;
+    width: 100%;
+    height: auto;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+dl,
+ol,
+ul {
+    margin-bottom: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+[type=reset],
+[type=submit],
+button,
+html [type=button] {
+    -webkit-appearance: none;
+}
+
+.clearfix {
+    &::before,
+    &::after {
+        display: block;
+        clear: both;
+        content: "";
+    }
+}
