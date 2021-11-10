@@ -1,0 +1,110 @@
+body {
+  font-family: $font;
+  font-size: 14px;
+  line-height: 1;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.seperator-y {
+  background-color: #232323;
+  height: 40px;
+  width: 1px;
+}
+.btn.btn-primary {
+  background: $primary-btn-color;
+  border: none;
+  outline: none;
+  width: 100%;
+  -webkit-tap-highlight-color: none;
+  text-transform: uppercase;
+}
+.btn:focus {
+  outline: none;
+  border: none;
+}
+.col-lg-2-4 {
+  flex: 0 0 0 20%;
+  max-width: 20%;
+}
+.product {
+  &__list.slick-initialized .slick-track {
+    display: flex;
+    gap: 0 10px;
+  }
+  &__item {
+    background: $white-color;
+    padding: 10px;
+    border-radius: $primary-radius;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 0;
+  }
+  &__tag {
+    span {
+      background: $gray-color;
+      padding: 5px;
+      border-radius: $primary-radius;
+      font-size: $xs-fs;
+      font-weight: $primary-fw;
+    }
+  }
+  &__img {
+    width: 100%;
+  }
+  &__label {
+    display: inline-flex;
+    align-items: center;
+    border-radius: 20px;
+    padding-right: 8px;
+    font-size: $xs-fs;
+    img {
+        width: 20px;
+        height: 20px;
+    }
+    span {
+      color: #fff;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      font-size: 10px;
+      line-height: 13px;
+      margin-left: 3px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      -webkit-line-clamp: 2;
+      text-transform: uppercase;
+    }
+    &.temp1 {
+        background: linear-gradient(to right, #ef3006, #c60004);
+    }
+  }
+  &__title {
+      font-size: $m-fs;
+      font-weight: $primary-fw;
+  }
+  &__compare {
+      display: flex;
+      align-items: center;
+      gap: 0 5px;
+      span {
+          padding: 5px;
+          border-radius: $primary-radius;
+          font-size: $s-fs;
+          border: 1px solid $primary-border-input;
+      }
+  }
+  &__text-online {
+      font-size: $s-fs;
+  }
+  &__price-old {
+      &-discount {
+          text-decoration: line-through;
+          font-weight: $primary-fw;
+      }
+      &-percent {
+          font-size: $mm-fs;
+      }
+  }
+}

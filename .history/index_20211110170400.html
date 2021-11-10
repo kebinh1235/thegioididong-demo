@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thế Giới Di Động - Demo</title>
+    <link rel="icon" href="./assets/images/icon-logo.png" type="image/x-icon" />
+    <!-- Font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./assets/font-icon/fontawesome-free-5.15.4-web/css/all.css"
+    />
+    <!-- Slick Slider CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/app.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Header -->
+      <header class="header">
+        <!--Banner quảng cáo-->
+        <section class="banner__outside">
+          <div class="container px-0">
+            <a href="#" class="banner__outsite-img">
+              <img
+                src="https://cdn.tgdd.vn/2021/11/banner/big11-1200-44-1200x44.png"
+                alt="Deal Banner Giá Rẻ"
+                title="Deal Banner Giá Rẻ"
+              />
+            </a>
+          </div>
+        </section>
+        <section class="header__top-bg d-none d-lg-block">
+          <div class="container">
+            <div class="header__top">
+              <div class="header__logo">
+                <a href="index.html">
+                  <img
+                    src="./assets/images/primary-logo.png"
+                    alt="Thế giới di động"
+                  />
+                </a>
+              </div>
+              <span class="seperator-y"></span>
+              <a href="#" class="header__location" data-toggle="modal" data-target="#locationModalCenter">
+                Xem giá, khuyến mãi tại
+                <span>
+                  Hồ Chí Minh
+                  <i class="fas fa-sort-down"></i>
+                </span>
+              </a>
+              <!-- Header Modal -->
+              <div class="modal fade" id="locationModalCenter" tabindex="-1" role="dialog" aria-labelledby="locationModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="header__modal-content">
+                    <div class="header__modal-heading">
+                      <p class="header__modal-title">
+                        Chọn địa chỉ nhận hàng
+                      </p>
+                      <button type="button" class="header__modal-close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                          <i class="fas fa-times"></i>
+                          Đóng
+                        </span>
+                      </button>  
+                    </div>
+                    <div class="header__modal-body">
+                      <p class="header__modal-body-title"><strong>Chọn đầy đủ địa chỉ nhận hàng</strong> để biết chính xác thời gian giao</p>
+                      <form class="header__modal-form" action="#">
+                        <div class="header__modal-group">
+                          <span class="header__modal-input" data-toggle="collapse" href="#collapseCityModal" role="button" aria-expanded="false" aria-controls="collapseCityModal">
+                            Hồ Chí Minh
+                            <i class="fas fa-sort-down"></i>
+                          </span>
+                          <div class="collapse" id="collapseCityModal">
+                            <div class="header__modal-collapse">
+                              <div class="header__modal-collapse-input">
+                                <a href="#">
+                                  <i class="fas fa-search header__modal-collapse-input-icon"></i>
+                                </a>
+                                <input type="text" placeholder="Nhập tỉnh, thành để tìm...">
+                              </div>
+                              <ul class="header__modal-collapse-content row px-0">
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Hồ Chí Minh</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Kiên Giang</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Hà Nội</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Ninh Bình</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Kon Tum</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Đà Nẵng</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Lai Châu</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">An Giang</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Lâm Đồng</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Bà Rịa - Vũng Tàu</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Long An</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Lạng Sơn</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Bắc Ninh</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Bắc Kạn</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Lào Cai</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Nam Định</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Bạc Liêu</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Bình Dương</a>
+                                </li>
+
+                              </ul>
+                              
+                            </div>
+                          </div>
+                        </div>
+                        <div class="header__modal-group">
+                          <span class="header__modal-input" data-toggle="collapse" href="#collapseDistrictModal" role="button" aria-expanded="false" aria-controls="collapseDistrictModal">
+                            Vui lòng chọn Quận/Huyện
+                            <i class="fas fa-sort-down"></i>
+                          </span>
+                          <div class="collapse" id="collapseDistrictModal">
+                            <div class="header__modal-collapse">
+                              <div class="header__modal-collapse-input">
+                                <a href="#">
+                                  <i class="fas fa-search header__modal-collapse-input-icon"></i>
+                                </a>
+                                <input type="text" placeholder="Nhập tỉnh, thành để tìm...">
+                              </div>
+                              <ul class="header__modal-collapse-content row px-0">
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận 1</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận 2</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận 3</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận 4</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận 5</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận 6</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận 7</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận 8</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận 9</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận 10</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận 11</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận 12</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận Thủ Đức</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận Bình Thạnh</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận Bình Tân</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận Gò Vấp</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận Phú Nhuận</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Quận Tân Bình</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="header__modal-group">
+                          <span class="header__modal-input" data-toggle="collapse" href="#collapseWardModal" role="button" aria-expanded="false" aria-controls="collapseWardModal">
+                            Vui lòng chọn Phường/Xã
+                            <i class="fas fa-sort-down"></i>
+                          </span>
+                          <div class="collapse" id="collapseWardModal">
+                            <div class="header__modal-collapse">
+                              <div class="header__modal-collapse-input">
+                                <a href="#">
+                                  <i class="fas fa-search header__modal-collapse-input-icon"></i>
+                                </a>
+                                <input type="text" placeholder="Nhập tỉnh, thành để tìm...">
+                              </div>
+                              <ul class="header__modal-collapse-content row px-0">
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 1</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 2</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 3</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 4</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 5</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 6</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 7</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 8</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 9</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 10</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 11</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 12</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 13</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 14</a>
+                                </li>
+                                <li class="header__modal-collape-item my-2 col-6">
+                                  <a href="#">Phường 15</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="header__modal-group">
+                          <input type="text" class="header__modal-input" placeholder="Số nhà, tên đường (Không bắt buộc)">
+                        </div>
+                      </form>
+                    </div>
+                    <div class="header__modal-footer">
+                      <div class="header__modal-btn text-center">
+                        <button type="button" class="btn btn-primary">Xác nhận</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <span class="seperator-y"></span>
+              <div class="header__search">
+                <input
+                  type="text"
+                  class="rounded"
+                  placeholder="Bạn tìm gì..."
+                />
+                <button class="header__search-btn">
+                  <i class="fas fa-search header__search-btn-icon"></i>
+                </button>
+              </div>
+              <span class="seperator-y"></span>
+              <a href="#" class="header__cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Giỏ hàng</span>
+              </a>
+              <span class="seperator-y"></span>
+              <a href="#" class="header__history-cart"> Lịch sử đơn hàng </a>
+              <span class="seperator-y"></span>
+              <a href="#" class="header__hot">
+                <div class="header__hot-dot-new">
+                  <div class="header__hot-dot-new-animation"></div>
+                </div>
+                Mobifone trả sau đến hạn thanh toán. Mua thẻ nạp ngay!
+              </a>
+              <span class="seperator-y"></span>
+              <div class="header__question">
+                <a class="header__question-link" href="#">24h<br />Công Nghệ</a>
+                <span class="seperator-y"></span>
+
+                <a class="header__question-link" href="#">Hỏi Đáp</a>
+                <span class="seperator-y"></span>
+
+                <a class="header__question-link" href="#">Game App</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="header__main d-none d-lg-block">
+          <div class="container">
+            <div class="header__navbar">
+              <ul class="header__navbar-list">
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-link">
+                    <img src="./assets/images/icon/header-icon/phone.png" alt="">
+                    <span>Điện thoại</span>
+                  </a>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-link">
+                    <img src="./assets/images/icon/header-icon/laptop.png" alt="">
+                    <span>Laptop</span>
+                  </a>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-link">
+                    <img src="./assets/images/icon/header-icon/tablet.png" alt="">
+                    <span>Tablet</span>
+                  </a>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-link">
+                    <img src="./assets/images/icon/header-icon/phukien.png" alt="">
+                    <span>Phụ kiện</span>
+                    <i class="fas fa-sort-down header__navbar-link-icon"></i>
+                  </a>
+                  <div class="header__navbar-sub">
+                    <div class="header__navbar-sub-body row">
+                      <div class="header__navbar-sub-col col-4">
+                        <ul class="header__navbar-sub-list">
+                          <div class="mb-3">
+                            <span class="header__navbar-sub-title">Phụ kiện di động</span>
+                          </div>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Pin sạc dự phòng</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Sạc, cáp</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Miếng dán màn hình</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Ốp lưng điện thoại</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Ốp lưng máy tính bảng</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Gậy tự sướng</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Giá đỡ laptop, điện thoại</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Đế, móc điện thoại</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Túi chống nước</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Túi đựng Airpods</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Phụ kiện Ipad</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="header__navbar-sub-col col-4">
+                        <ul class="header__navbar-sub-list">
+                          <div class="mb-3">
+                            <span class="header__navbar-sub-title">Phụ kiện laptop</span>
+                          </div>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Chuột, bàn phím</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Thiết bị mạng</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Camera, Webcam</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Balo, túi chống sốc</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Phần mềm</a>
+                          </li>
+                        </ul>
+                        <ul class="header__navbar-sub-list">
+                          <div class="mb-3">
+                            <span class="header__navbar-sub-title">Thiết bị âm thanh</span>
+                          </div>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Tai nghe</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Loa</a>
+                          </li>
+                        </ul>
+                        <ul class="header__navbar-sub-list">
+                          <div class="mb-3">
+                            <span class="header__navbar-sub-title">Thiết bị lưu trữ</span>
+                          </div>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Thẻ nhớ</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">USB</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Ổ cứng di động</a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="header__navbar-sub-col col-4">
+                        <ul class="header__navbar-sub-list">
+                          <div class="mb-3">
+                            <span class="header__navbar-sub-title">
+                            Thương hiệu hàng đầu
+                            <a class="header__navbar-sub-title-link" href="#">
+                              Xem tất cả
+                              <i class="fas fa-caret-right header__navbar-sub-icon"></i>
+                            </a>
+                            </span>
+                          </div>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Apple</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Samsung</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Sony</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Anker</a>
+                          </li>
+                        </ul>
+                        <ul class="header__navbar-sub-list">
+                          <div class="mb-3">
+                            <span class="header__navbar-sub-title">Phụ kiện khác</span>
+                          </div>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Phụ kiện ô tô</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Máy tính cầm tay</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Máy chiếu, TV Box</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Quạt Mini</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Pin tiểu, pin điện thoại</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-link">
+                    <img src="./assets/images/icon/header-icon/smart-watch.png" alt="">
+                    <span>Đồng hồ thông minh</span>
+                  </a>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-link">
+                    <img src="./assets/images/icon/header-icon/primary-watch.png" alt="">
+                    <span>Đồng hồ thời trang</span>
+                  </a>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-link">
+                    <img src="./assets/images/icon/header-icon/pc.png" alt="">
+                    <span>PC, Máy in</span>
+                    <i class="fas fa-sort-down header__navbar-link-icon"></i>
+                  </a>
+                  <div class="header__navbar-sub pc-mayin">
+                    <div class="header__navbar-sub-body row">
+                      <div class="header__navbar-sub-col col-12">
+                        <ul class="header__navbar-sub-list">
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Máy in</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Mực in</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Màn hình máy tính</a>
+                          </li>
+                          <li class="header__navbar-sub-item">
+                            <a href="#" class="header__navbar-sub-link">Máy tính để bàn</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-link">
+                    <span>Máy cũ giá rẻ</span>
+                  </a>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-link">
+                    <span>Sim, thẻ cào</span>
+                  </a>
+                  <div class="header__navbar-item-tag-sale">
+                    <span>Giảm 5%</span>
+                  </div>
+                </li>
+                <li class="header__navbar-item">
+                  <a href="#" class="header__navbar-link">
+                    <span>Trả góp, điện nước</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </header>
+      <!-- Main -->
+      <main style="margin-top: 25px;">
+        <!-- Banner 2 bên -->
+        <section class="banner__sticky">
+          <a style="left: calc((100vw - 1200px) / 2 - 95px)" href="#">
+            <img src="https://cdn.tgdd.vn/2021/11/banner/TraiTGDD-79x271.png" alt="">
+          </a>
+          <a style="right: calc((100vw - 1200px) / 2 - 95px)" href="#">
+            <img src="https://cdn.tgdd.vn/2021/11/banner/PhaiTGDD-79x271.png" alt="">
+          </a>
+        </section>
+        <!-- Banner chính -->
+        <section class="banner">
+          <div class="container no-gutters">
+            <div class="row md-gutters">
+              <div class="col-12 col-md-12 col-lg-8">
+                <ul class="banner__primary">
+                  <li class="banner__item">
+                    <a href="#" class="banner__link">
+                      <img src="https://cdn.tgdd.vn/2021/11/banner/big11-830-300-830x300.png" alt="" class="banner__img">
+                    </a>
+                  </li>
+                  <li class="banner__item">
+                    <a href="#" class="banner__link">
+                      <img src="https://cdn.tgdd.vn/2021/11/banner/830-300(1)-830x300.png" alt="" class="banner__img">
+                    </a>
+                  </li>
+                  <li class="banner__item">
+                    <a href="#" class="banner__link">
+                      <img src="https://cdn.tgdd.vn/2021/10/banner/cbfold3-830-300-830x300-2.png" alt="" class="banner__img">
+                    </a>
+                  </li>
+                  <li class="banner__item">
+                    <a href="#" class="banner__link">
+                      <img src="https://cdn.tgdd.vn/2021/11/banner/big11-pk-830-300-830x300.png" alt="" class="banner__img">
+                    </a>
+                  </li>
+                  <li class="banner__item">
+                    <a href="#" class="banner__link">
+                      <img src="https://cdn.tgdd.vn/2021/11/banner/830-300(1)-830x300.png" alt="" class="banner__img">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-4 d-none d-lg-block">
+                <div class="row sm-gutters">
+                  <div class="banner__primary-small col-6">
+                      <a href="#">
+                        <img src="https://cdn.tgdd.vn/2021/11/banner/laptopdesk(3)-340x340.jpg" alt="">
+                      </a>
+                  </div>
+                  <div class="banner__primary-small col-6">
+                      <a href="#">
+                        <img src="https://cdn.tgdd.vn/2021/11/banner/laptopdesk(1)-340x340-1.jpg" alt="">
+                      </a>
+                  </div>
+                  <div class="banner__primary-small col-6">
+                      <a href="#">
+                        <img src="https://cdn.tgdd.vn/2021/11/banner/laptopdesk-340x340.jpg" alt="">
+                      </a>
+                  </div>
+                  <div class="banner__primary-small col-6">
+                      <a href="#">
+                        <img src="https://cdn.tgdd.vn/2021/11/banner/Frame39712x-340x340.png" alt="">
+                      </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Banner con -->
+        <section class="banner__sub">
+          <div class="container no-gutters">
+            <a href="#">
+              <img src="https://cdn.tgdd.vn/2021/10/banner/1200-44-1200x44-3.png" alt="" srcset="">
+            </a>
+          </div>
+        </section>
+        <section class="sale">
+          <div class="container no-gutters">
+            <div class="sale__container">
+              <div class="sale__header">
+                <img src="https://cdn.tgdd.vn/2021/11/banner/sansaledesktopTGDD-1200x90.png" alt="">
+                <div class="sale__body">
+                  <div class="container sm-gutters py-3">
+                    <div class="product__list">
+                      <div class="product__item">
+                        <a href="#" class="product__link">
+                          <div class="product__tag">
+                            <span>Trả góp 0%</span>
+                          </div>
+                          <div class="product__img">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/248283/samsung-galaxy-z-flip-3-violet-1-600x600.jpg" alt="">
+                          </div>
+                          <div class="product__info">
+                            <p class="product__label temp1">
+                              <img width="20" height="20" alt="11.11 SIÊU SALE" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                              <span>11.11 SIÊU SALE</span>
+                            </p>
+                            <p class="product__title">Samsung Galaxy Z Flip3 5G 256GB</p>
+                            <!-- <div class="product__compare">
+                              <span>Có chống nước</span>
+                              <span>Có trân châu</span>
+                            </div> -->
+                            <p class="product__text-online">Online giá rẻ</p>
+                            <!-- <div class="product__price-old">
+                              <span class="product__price-old-discount">26.990.000₫</span>
+                              <span class="product__price-old-percent">-15%</span>
+                            </div> -->
+                            <p class="product__price">26.990.000₫</p>
+                            <p class="product__gift">Quà 1.000.000₫</p>
+                            <div class="product__rating">
+                              <span class="product__rating-star">
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                              </span>
+                              <span class="product__rating-count">25</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="product__item">
+                        <a href="#" class="product__link">
+                          <div class="product__tag">
+                            <span>Trả góp 0%</span>
+                          </div>
+                          <div class="product__img">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/250258/iphone-13-starlight-1-600x600.jpg" alt="">
+                          </div>
+                          <div class="product__info">
+                            <p class="product__label temp1">
+                              <img width="20" height="20" alt="11.11 SIÊU SALE" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                              <span>11.11 SIÊU SALE</span>
+                            </p>
+                            <p class="product__title">iPhone 13 256GB</p>
+                            <div class="product__compare">
+                              <span>Có chống nước</span>
+                              <span>Có trân châu</span>
+                            </div>
+                            <p class="product__text-online">Online giá rẻ</p>
+                            <div class="product__price-old">
+                              <span class="product__price-old-discount">27.990.000₫</span>
+                              <!-- <span class="product__price-old-percent">-15%</span> -->
+                            </div>
+                            <p class="product__price">26.990.000₫</p>
+                            <p class="product__gift">Quà 1.390.000đ</p>
+                            <!-- <div class="product__rating">
+                              <span class="product__rating-star">
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="product__rating-count">199</span>
+                            </div> -->
+                          </div>
+                        </a>
+                      </div>
+                      <div class="product__item">
+                        <a href="#" class="product__link">
+                          <div class="product__tag">
+                            <span>Trả góp 0%</span>
+                          </div>
+                          <div class="product__img">
+                            <img src="https://cdn.tgdd.vn/Products/Images/7077/248755/samsung-galaxy-watch-4-lte-44mm-den-thumb-1-1-600x600.jpg" alt="">
+                          </div>
+                          <div class="product__info">
+                            <p class="product__label temp5">
+                              <img width="20" height="20" alt="11.11 SIÊU SALE" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                              <span>VNPAY GIẢM 300k</span>
+                            </p>
+                            <p class="product__title">Samsung Galaxy Watch 4 LTE 44mm</p>
+                            <div class="product__compare">
+                              <span>Có nghe gọi</span>
+                              <span>Có nhắn tin</span>
+                            </div>
+                            <!-- <p class="product__text-online">Online giá rẻ</p> -->
+                            <div class="product__price-old">
+                              <!-- <span class="product__price-old-discount">7.990.000₫</span> -->
+                              <!-- <span class="product__price-old-percent">-15%</span> -->
+                            </div>
+                            <p class="product__price">7.990.000₫</p>
+                            <p class="product__gift">Quà 500.000đ</p>
+                            <div class="product__rating">
+                              <span class="product__rating-star">
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="product__rating-count">199</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="product__item">
+                        <a href="#" class="product__link">
+                          <div class="product__tag">
+                            <span>Trả góp 0%</span>
+                          </div>
+                          <div class="product__img">
+                            <img src="https://cdn.tgdd.vn/Products/Images/44/231244/macbook-air-m1-2020-gold-600x600.jpg" alt="">
+                          </div>
+                          <div class="product__info">
+                            <p class="product__label temp1">
+                              <img width="20" height="20" alt="11.11 SIÊU SALE" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                              <span>11.11 SIÊU SALE</span>
+                            </p>
+                            <p class="product__title">MacBook Air M1 2020 7-core GPU</p>
+                            <div class="product__compare">
+                              <span>Ram 8GB</span>
+                              <span>SSD 256GB</span>
+                            </div>
+                            <p class="product__text-online">Online giá rẻ</p>
+                            <div class="product__price-old">
+                              <span class="product__price-old-discount">28.990.000₫</span>
+                              <span class="product__price-old-percent">-5%</span>
+                            </div>
+                            <p class="product__price">27.490.000₫</p>
+                            <!-- <p class="product__gift">Quà 100.000đ</p> -->
+                            <div class="product__rating">
+                              <span class="product__rating-star">
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="product__rating-count">39</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="product__item">
+                        <a href="#" class="product__link">
+                          <div class="product__tag">
+                            <span>Trả góp 0%</span>
+                          </div>
+                          <div class="product__img">
+                            <img src="https://cdn.tgdd.vn/Products/Images/7077/229044/apple-watch-s6-40mm-vien-nhom-day-cao-su-hong-thumb-1-600x600.jpg" alt="">
+                          </div>
+                          <div class="product__info">
+                            <p class="product__label temp6">
+                              <img width="20" height="20" alt="11.11 SIÊU SALE" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                              <span>VNPAY GIẢM 400k</span>
+                            </p>
+                            <p class="product__title">Apple Watch S6 40mm viền nhôm dây cao su</p>
+                            <div class="product__compare">
+                              <span>Có chống nước</span>
+                              <span>Có nghe gọi</span>
+                            </div>
+                            <p class="product__text-online">Online giá rẻ</p>
+                            <div class="product__price-old">
+                              <span class="product__price-old-discount">11.990.000₫</span>
+                              <span class="product__price-old-percent">-25%</span>
+                            </div>
+                            <p class="product__price">8.992.000₫</p>
+                            <!-- <p class="product__gift">Quà 100.000đ</p> -->
+                            <div class="product__rating">
+                              <span class="product__rating-star">
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                              </span>
+                              <span class="product__rating-count">33</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="product__item">
+                        <a href="#" class="product__link">
+                          <div class="product__tag">
+                            <span>Trả góp 0%</span>
+                          </div>
+                          <div class="product__img">
+                            <img src="https://cdn.tgdd.vn/Products/Images/54/236026/airpods-pro-wireless-charge-apple-mwp22-ava-600x600.jpg" alt="">
+                          </div>
+                          <div class="product__info">
+                            <p class="product__label temp1">
+                              <img width="20" height="20" alt="11.11 SIÊU SALE" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                              <span>11.11 SIÊU SALE</span>
+                            </p>
+                            <p class="product__title">Tai nghe Bluetooth AirPods Pro Wireless Charge Apple MWP22</p>
+                            <div class="product__compare">
+                              <span>Có âm thanh</span>
+                              <!-- <span>Có trân châu</span> -->
+                            </div>
+                            <p class="product__text-online">Online giá rẻ</p>
+                            <div class="product__price-old">
+                              <span class="product__price-old-discount">6.790.000₫</span>
+                              <span class="product__price-old-percent">-22%</span>
+                            </div>
+                            <p class="product__price">5.290.000₫</p>
+                            <!-- <p class="product__gift">Quà 100.000đ</p> -->
+                            <div class="product__rating">
+                              <span class="product__rating-star">
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="product__rating-count">31</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="product__item">
+                        <a href="#" class="product__link">
+                          <div class="product__tag">
+                            <span>Trả góp 0%</span>
+                          </div>
+                          <div class="product__img">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/248283/samsung-galaxy-z-flip-3-violet-1-600x600.jpg" alt="">
+                          </div>
+                          <div class="product__info">
+                            <p class="product__label temp1">
+                              <img width="20" height="20" alt="11.11 SIÊU SALE" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                              <span>11.11 SIÊU SALE</span>
+                            </p>
+                            <p class="product__title">iPhone 12 Pro Max 128GB</p>
+                            <div class="product__compare">
+                              <span>Có chống nước</span>
+                              <span>Có trân châu</span>
+                            </div>
+                            <p class="product__text-online">Online giá rẻ</p>
+                            <div class="product__price-old">
+                              <span class="product__price-old-discount">32.990.000₫</span>
+                              <span class="product__price-old-percent">-15%</span>
+                            </div>
+                            <p class="product__price">31.990.000₫</p>
+                            <p class="product__gift">Quà 100.000đ</p>
+                            <div class="product__rating">
+                              <span class="product__rating-star">
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="product__rating-count">199</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="product__item">
+                        <a href="#" class="product__link">
+                          <div class="product__tag">
+                            <span>Trả góp 0%</span>
+                          </div>
+                          <div class="product__img">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/248283/samsung-galaxy-z-flip-3-violet-1-600x600.jpg" alt="">
+                          </div>
+                          <div class="product__info">
+                            <p class="product__label temp1">
+                              <img width="20" height="20" alt="11.11 SIÊU SALE" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                              <span>11.11 SIÊU SALE</span>
+                            </p>
+                            <p class="product__title">iPhone 12 Pro Max 128GB</p>
+                            <div class="product__compare">
+                              <span>Có chống nước</span>
+                              <span>Có trân châu</span>
+                            </div>
+                            <p class="product__text-online">Online giá rẻ</p>
+                            <div class="product__price-old">
+                              <span class="product__price-old-discount">32.990.000₫</span>
+                              <span class="product__price-old-percent">-15%</span>
+                            </div>
+                            <p class="product__price">31.990.000₫</p>
+                            <p class="product__gift">Quà 100.000đ</p>
+                            <div class="product__rating">
+                              <span class="product__rating-star">
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="product__rating-count">199</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="product__item">
+                        <a href="#" class="product__link">
+                          <div class="product__tag">
+                            <span>Trả góp 0%</span>
+                          </div>
+                          <div class="product__img">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/248283/samsung-galaxy-z-flip-3-violet-1-600x600.jpg" alt="">
+                          </div>
+                          <div class="product__info">
+                            <p class="product__label temp1">
+                              <img width="20" height="20" alt="11.11 SIÊU SALE" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                              <span>11.11 SIÊU SALE</span>
+                            </p>
+                            <p class="product__title">iPhone 12 Pro Max 128GB</p>
+                            <div class="product__compare">
+                              <span>Có chống nước</span>
+                              <span>Có trân châu</span>
+                            </div>
+                            <p class="product__text-online">Online giá rẻ</p>
+                            <div class="product__price-old">
+                              <span class="product__price-old-discount">32.990.000₫</span>
+                              <span class="product__price-old-percent">-15%</span>
+                            </div>
+                            <p class="product__price">31.990.000₫</p>
+                            <p class="product__gift">Quà 100.000đ</p>
+                            <div class="product__rating">
+                              <span class="product__rating-star">
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="product__rating-count">199</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="product__item">
+                        <a href="#" class="product__link">
+                          <div class="product__tag">
+                            <span>Trả góp 0%</span>
+                          </div>
+                          <div class="product__img">
+                            <img src="https://cdn.tgdd.vn/Products/Images/42/248283/samsung-galaxy-z-flip-3-violet-1-600x600.jpg" alt="">
+                          </div>
+                          <div class="product__info">
+                            <p class="product__label temp1">
+                              <img width="20" height="20" alt="11.11 SIÊU SALE" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                              <span>11.11 SIÊU SALE</span>
+                            </p>
+                            <p class="product__title">iPhone 12 Pro Max 128GB</p>
+                            <div class="product__compare">
+                              <span>Có chống nước</span>
+                              <span>Có trân châu</span>
+                            </div>
+                            <p class="product__text-online">Online giá rẻ</p>
+                            <div class="product__price-old">
+                              <span class="product__price-old-discount">32.990.000₫</span>
+                              <span class="product__price-old-percent">-15%</span>
+                            </div>
+                            <p class="product__price">31.990.000₫</p>
+                            <p class="product__gift">Quà 100.000đ</p>
+                            <div class="product__rating">
+                              <span class="product__rating-star">
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star star-gold"></i>
+                                <i class="fas fa-star"></i>
+                              </span>
+                              <span class="product__rating-count">199</span>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- <div class="row sm-gutters product__list">
+                      <div class="col-6 col-md-3">
+                        <div class="product__item">
+                          <a href="#" class="product__link">
+                            <div class="product__tag">
+                              <span>Trả góp 0%</span>
+                            </div>
+                            <div class="product__img">
+                              <img src="https://cdn.tgdd.vn/Products/Images/42/248283/samsung-galaxy-z-flip-3-violet-1-600x600.jpg" alt="">
+                            </div>
+                            <div class="product__info">
+                              <p class="product__label">
+                                <img width="20" height="20" class=" lazyloaded" alt="11.11 SIÊU SALE" data-src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                                <span>11.11 SIÊU SALE</span>
+                              </p>
+                              <p class="product__title">iPhone 12 Pro Max 128GB</p>
+                              <div class="product__compare">
+                                <span>Có chống nước</span>
+                                <span>Có trân châu</span>
+                              </div>
+                              <p class="product__text-online">Online giá rẻ</p>
+                              <div class="product__price-old">
+                                <span class="product__discount">32.990.000₫</span>
+                                <span class="product__percent">-15%</span>
+                              </div>
+                              <p class="product__price">31.990.000₫</p>
+                              <p class="product__gift">Quà 100.000đ</p>
+                              <div class="product__rating">
+                                <span class="product__star">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </span>
+                                <span class="product__star-count">199</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-3">
+                        <div class="product__item">
+                          <a href="#" class="product__link">
+                            <div class="product__tag">
+                              <span>Trả góp 0%</span>
+                            </div>
+                            <div class="product__img">
+                              <img src="https://cdn.tgdd.vn/Products/Images/42/248283/samsung-galaxy-z-flip-3-violet-1-600x600.jpg" alt="">
+                            </div>
+                            <div class="product__info">
+                              <p class="product__label">
+                                <img width="20" height="20" class=" lazyloaded" alt="11.11 SIÊU SALE" data-src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                                <span>11.11 SIÊU SALE</span>
+                              </p>
+                              <p class="product__title">iPhone 12 Pro Max 128GB</p>
+                              <div class="product__compare">
+                                <span>Có chống nước</span>
+                                <span>Có trân châu</span>
+                              </div>
+                              <p class="product__text-online">Online giá rẻ</p>
+                              <div class="product__price-old">
+                                <span class="product__discount">32.990.000₫</span>
+                                <span class="product__percent">-15%</span>
+                              </div>
+                              <p class="product__price">31.990.000₫</p>
+                              <p class="product__gift">Quà 100.000đ</p>
+                              <div class="product__rating">
+                                <span class="product__star">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </span>
+                                <span class="product__star-count">199</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-3">
+                        <div class="product__item">
+                          <a href="#" class="product__link">
+                            <div class="product__tag">
+                              <span>Trả góp 0%</span>
+                            </div>
+                            <div class="product__img">
+                              <img src="https://cdn.tgdd.vn/Products/Images/42/248283/samsung-galaxy-z-flip-3-violet-1-600x600.jpg" alt="">
+                            </div>
+                            <div class="product__info">
+                              <p class="product__label">
+                                <img width="20" height="20" class=" lazyloaded" alt="11.11 SIÊU SALE" data-src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                                <span>11.11 SIÊU SALE</span>
+                              </p>
+                              <p class="product__title">iPhone 12 Pro Max 128GB</p>
+                              <div class="product__compare">
+                                <span>Có chống nước</span>
+                                <span>Có trân châu</span>
+                              </div>
+                              <p class="product__text-online">Online giá rẻ</p>
+                              <div class="product__price-old">
+                                <span class="product__discount">32.990.000₫</span>
+                                <span class="product__percent">-15%</span>
+                              </div>
+                              <p class="product__price">31.990.000₫</p>
+                              <p class="product__gift">Quà 100.000đ</p>
+                              <div class="product__rating">
+                                <span class="product__star">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </span>
+                                <span class="product__star-count">199</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-3">
+                        <div class="product__item">
+                          <a href="#" class="product__link">
+                            <div class="product__tag">
+                              <span>Trả góp 0%</span>
+                            </div>
+                            <div class="product__img">
+                              <img src="https://cdn.tgdd.vn/Products/Images/42/248283/samsung-galaxy-z-flip-3-violet-1-600x600.jpg" alt="">
+                            </div>
+                            <div class="product__info">
+                              <p class="product__label">
+                                <img width="20" height="20" class=" lazyloaded" alt="11.11 SIÊU SALE" data-src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                                <span>11.11 SIÊU SALE</span>
+                              </p>
+                              <p class="product__title">iPhone 12 Pro Max 128GB</p>
+                              <div class="product__compare">
+                                <span>Có chống nước</span>
+                                <span>Có trân châu</span>
+                              </div>
+                              <p class="product__text-online">Online giá rẻ</p>
+                              <div class="product__price-old">
+                                <span class="product__discount">32.990.000₫</span>
+                                <span class="product__percent">-15%</span>
+                              </div>
+                              <p class="product__price">31.990.000₫</p>
+                              <p class="product__gift">Quà 100.000đ</p>
+                              <div class="product__rating">
+                                <span class="product__star">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </span>
+                                <span class="product__star-count">199</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="col-6 col-md-3">
+                        <div class="product__item">
+                          <a href="#" class="product__link">
+                            <div class="product__tag">
+                              <span>Trả góp 0%</span>
+                            </div>
+                            <div class="product__img">
+                              <img src="https://cdn.tgdd.vn/Products/Images/42/248283/samsung-galaxy-z-flip-3-violet-1-600x600.jpg" alt="">
+                            </div>
+                            <div class="product__info">
+                              <p class="product__label">
+                                <img width="20" height="20" class=" lazyloaded" alt="11.11 SIÊU SALE" data-src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png" src="https://cdn.tgdd.vn/2020/10/content/icon1-50x50.png">
+                                <span>11.11 SIÊU SALE</span>
+                              </p>
+                              <p class="product__title">iPhone 12 Pro Max 128GB</p>
+                              <div class="product__compare">
+                                <span>Có chống nước</span>
+                                <span>Có trân châu</span>
+                              </div>
+                              <p class="product__text-online">Online giá rẻ</p>
+                              <div class="product__price-old">
+                                <span class="product__discount">32.990.000₫</span>
+                                <span class="product__percent">-15%</span>
+                              </div>
+                              <p class="product__price">31.990.000₫</p>
+                              <p class="product__gift">Quà 100.000đ</p>
+                              <div class="product__rating">
+                                <span class="product__star">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                </span>
+                                <span class="product__star-count">199</span>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div> -->
+                  </div>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </section>
+      </main>
+
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Slick Slider JS -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- JavaScript -->
+    <script src="./assets/scripts/app.js"></script>
+  </body>
+</html>
