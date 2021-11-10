@@ -118,6 +118,57 @@ img {
     transform: translateY(0%);
   }
 }
+.col-2-4,
+.col-sm-2-4,
+.col-md-2-4,
+.col-lg-2-4,
+.col-xl-2-4 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-2-4 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20%;
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+@media (min-width: 540px) {
+  .col-sm-2-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 720px) {
+  .col-md-2-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 960px) {
+  .col-lg-2-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media (min-width: 1140px) {
+  .col-xl-2-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
 body {
   font-family: "Arial", sans-serif;
   font-size: 14px;
@@ -149,22 +200,22 @@ body {
   border: none;
 }
 
-.product__list.slick-initialized.slick-slider {
+.star-gold {
+  color: #FED100;
+}
+
+.product__slider.slick-initialized.slick-slider {
   position: static;
 }
-.product__list.slick-initialized .slick-track {
-  display: flex;
-  gap: 0 10px;
-}
-.product__list.slick-initialized .slick-slide {
+.product__slider.slick-initialized .slick-slide {
   height: auto;
 }
-.product__list.slick-initialized:hover > .slick-arrow {
+.product__slider.slick-initialized:hover > .slick-arrow {
   background: #FED100;
   color: #000000;
   box-shadow: 6px 0 4px rgba(0, 0, 0, 0.05), 4px 0 4px rgba(0, 0, 0, 0.09);
 }
-.product__list.slick-initialized .slick-arrow {
+.product__slider.slick-initialized .slick-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -178,20 +229,39 @@ body {
   color: #b5b5b5;
   transition: all 0.3s linear;
 }
-.product__list.slick-initialized .slick-prev {
+.product__slider.slick-initialized .slick-prev {
   left: -5px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.product__list.slick-initialized .slick-next {
+.product__slider.slick-initialized .slick-next {
   right: -5px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+.product__slider.product__list.slick-initialized .slick-track {
+  display: flex;
+}
+.product__slider.product__gap.slick-initialized .slick-track {
+  display: flex;
+  gap: 0 10px;
+}
+.product__slider.product__gap .product__item {
+  border: none;
+  border-radius: 5px;
+}
+
+.product__list {
+  border-left: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+  margin-top: 20px;
+}
 .product__item {
   background: #ffffff;
   padding: 10px;
-  border-radius: 5px;
+  height: 100%;
+  border-right: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
 }
 .product__item:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -214,12 +284,17 @@ body {
 }
 .product__img {
   width: 100%;
-  height: 220px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
   transition: all 0.2s linear;
+}
+.product__img img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  padding-top: 10px;
 }
 .product__label {
   display: inline-flex;
@@ -305,9 +380,42 @@ body {
 .product__rating {
   font-size: 12px;
 }
+.product__rating-star {
+  color: #F1F1F1;
+}
 
-.star-gold {
-  color: #FED100;
+.highlight__container {
+  position: relative;
+}
+.highlight__boxed {
+  margin-bottom: 30px;
+}
+.highlight__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.highlight__title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.highlight__tag-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  gap: 0 10px;
+}
+.highlight__tag-link {
+  display: block;
+  padding: 10px;
+  border-radius: 100rem;
+  font-size: 13px;
+  border: 1px solid #dee2e6;
+  transition: all 0.3s linear;
+}
+.highlight__tag-link:hover {
+  color: #0069db;
 }
 
 .banner__outside {
