@@ -3,9 +3,6 @@ body {
   font-size: $m-fs;
   line-height: 1;
 }
-.app {
-  overflow-x: hidden;
-}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -235,7 +232,6 @@ body {
   &__title {
     font-size: 24px;
     font-weight: bold;
-    text-transform: uppercase;
   }
   &__tag-list {
     display: flex;
@@ -248,9 +244,10 @@ body {
   }
   &__tag-link {
     display: block;
+    min-width: 180px;
     text-align: center;
     line-height: 1.3rem;
-    padding: 5px 10px;
+    padding: 10px 5px;
     border-radius: 100rem;
     font-size: 13px;
     border: 1px solid #dee2e6;
@@ -269,9 +266,6 @@ body {
   }
   .highlight__tag-list {
     gap: 0 5px;
-    &::-webkit-scrollbar {
-      display: none;
-    }
   }
   .highlight__tag-link {
     min-width: 160px;

@@ -175,6 +175,10 @@ body {
   line-height: 1;
 }
 
+.app {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -211,7 +215,7 @@ body {
   height: auto;
 }
 .product__slider.slick-initialized:hover > .slick-arrow {
-  background: #FED100;
+  background: #f3f3f3;
   color: #000000;
   box-shadow: 6px 0 4px rgba(0, 0, 0, 0.05), 4px 0 4px rgba(0, 0, 0, 0.09);
 }
@@ -252,9 +256,12 @@ body {
 }
 
 .product__list {
-  border-left: 1px solid #dee2e6;
   border-top: 1px solid #dee2e6;
+  border-left: 1px solid #dee2e6;
   margin-top: 20px;
+}
+.product__list .slick-list {
+  width: calc(100% + 1px);
 }
 .product__item {
   background: #ffffff;
@@ -398,6 +405,7 @@ body {
 .highlight__title {
   font-size: 24px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .highlight__tag-list {
   display: flex;
@@ -405,10 +413,14 @@ body {
   align-items: center;
   margin: 0;
   gap: 0 10px;
+  max-width: 100%;
+  overflow-x: auto;
 }
 .highlight__tag-link {
   display: block;
-  padding: 10px;
+  text-align: center;
+  line-height: 1.3rem;
+  padding: 5px 10px;
   border-radius: 100rem;
   font-size: 13px;
   border: 1px solid #dee2e6;
@@ -418,6 +430,26 @@ body {
   color: #0069db;
 }
 
+@media (max-width: 1023px) {
+  .highlight__header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+    gap: 10px 0;
+  }
+
+  .highlight__tag-list {
+    gap: 0 5px;
+  }
+  .highlight__tag-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .highlight__tag-link {
+    min-width: 160px;
+    padding: 5px;
+  }
+}
 .banner__outside {
   background: #fcdc66;
   height: 45px;
@@ -500,7 +532,7 @@ body {
   position: relative;
   padding: 0 0 0 20px;
 }
-.header__hot-dot-new {
+.header__dot-new {
   background-color: #FED100;
   border-radius: 100%;
   display: block;
@@ -512,7 +544,7 @@ body {
   transform: translateY(-50%);
   will-change: transform;
 }
-.header__hot-dot-new-animation {
+.header__dot-new-animation {
   border: 1px solid #ffe66b;
   background-color: rgba(255, 230, 107, 0.2);
   border-radius: 100%;

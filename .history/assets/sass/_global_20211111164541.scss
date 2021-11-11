@@ -4,7 +4,7 @@ body {
   line-height: 1;
 }
 .app {
-  overflow-x: hidden;
+  overflow-x: hidden
 }
 .container {
   max-width: 1200px;
@@ -235,7 +235,6 @@ body {
   &__title {
     font-size: 24px;
     font-weight: bold;
-    text-transform: uppercase;
   }
   &__tag-list {
     display: flex;

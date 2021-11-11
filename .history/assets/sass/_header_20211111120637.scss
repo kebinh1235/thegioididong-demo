@@ -83,29 +83,29 @@
     padding: 0 0 0 20px;
   }
   &__dot-new {
-    background-color: $primary-color;
-    border-radius: 100%;
-    display: block;
-    left: 3px;
-    width: 8px;
-    height: 8px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    will-change: transform;
+      background-color: $primary-color;
+      border-radius: 100%;
+      display: block;
+      left: 3px;
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      will-change: transform;
   }
   &__dot-new-animation {
     border: 1px solid #ffe66b;
-    background-color: rgba(255, 230, 107, 0.2);
-    border-radius: 100%;
-    display: block;
-    height: 8px;
-    opacity: 1;
-    -moz-animation: growUp 1.25s linear infinite;
-    -o-animation: growUp 1.25s linear infinite;
-    -webkit-animation: growUp 1.25s linear infinite;
-    animation: growUp 1.25s linear infinite;
-    width: 8px;
+        background-color: rgba(255, 230, 107, 0.2);
+        border-radius: 100%;
+        display: block;
+        height: 8px;
+        opacity: 1;
+        -moz-animation: growUp 1.25s linear infinite;
+        -o-animation: growUp 1.25s linear infinite;
+        -webkit-animation: growUp 1.25s linear infinite;
+        animation: growUp 1.25s linear infinite;
+        width: 8px;
   }
   &__question {
     display: flex;

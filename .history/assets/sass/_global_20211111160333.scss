@@ -3,9 +3,6 @@ body {
   font-size: $m-fs;
   line-height: 1;
 }
-.app {
-  overflow-x: hidden;
-}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -87,9 +84,6 @@ body {
     border-top: 1px solid $primary-border-input;
     border-left: 1px solid $primary-border-input;
     margin-top: 20px;
-    & .slick-list {
-      width: calc(100% + 1px);
-    }
   }
   &__item {
     background: $white-color;
@@ -235,7 +229,6 @@ body {
   &__title {
     font-size: 24px;
     font-weight: bold;
-    text-transform: uppercase;
   }
   &__tag-list {
     display: flex;
@@ -243,14 +236,13 @@ body {
     align-items: center;
     margin: 0;
     gap: 0 10px;
-    max-width: 100%;
-    overflow-x: auto;
   }
   &__tag-link {
     display: block;
+    min-width: 180px;
     text-align: center;
     line-height: 1.3rem;
-    padding: 5px 10px;
+    padding: 10px 5px;
     border-radius: 100rem;
     font-size: 13px;
     border: 1px solid #dee2e6;
@@ -261,20 +253,10 @@ body {
   }
 }
 @media (max-width: 1023px) {
-  .highlight__header {
+  .highlight__tag-link {
     flex-direction: column;
     align-items: flex-start;
     padding: 0 10px;
     gap: 10px 0;
-  }
-  .highlight__tag-list {
-    gap: 0 5px;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  .highlight__tag-link {
-    min-width: 160px;
-    padding: 5px;
   }
 }

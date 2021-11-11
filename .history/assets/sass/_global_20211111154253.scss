@@ -3,9 +3,6 @@ body {
   font-size: $m-fs;
   line-height: 1;
 }
-.app {
-  overflow-x: hidden;
-}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -84,19 +81,14 @@ body {
 // Product List
 .product {
   &__list {
-    border-top: 1px solid $primary-border-input;
-    border-left: 1px solid $primary-border-input;
-    margin-top: 20px;
-    & .slick-list {
-      width: calc(100% + 1px);
+      border: 1px solid $primary-border-input;
+      margin-top: 20px;
     }
-  }
-  &__item {
+    &__item {
     background: $white-color;
     padding: 10px;
     height: 100%;
     border-right: 1px solid $primary-border-input;
-    border-bottom: 1px solid $primary-border-input;
   }
   &__item:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -125,10 +117,10 @@ body {
     margin-bottom: 10px;
     transition: all 0.2s linear;
     img {
-      width: 200px;
-      height: 200px;
-      object-fit: contain;
-      padding-top: 10px;
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        padding-top: 10px;
     }
   }
   &__label {
@@ -216,16 +208,16 @@ body {
     font-size: $s-fs;
   }
   &__rating-star {
-    color: $gray-color;
+      color: $gray-color;
   }
 }
 // Highlight Boxed-Product
 .highlight {
   &__container {
-    position: relative;
+      position: relative;
   }
   &__boxed {
-    margin-bottom: 30px;
+      margin-bottom: 30px;
   }
   &__header {
     display: flex;
@@ -235,7 +227,6 @@ body {
   &__title {
     font-size: 24px;
     font-weight: bold;
-    text-transform: uppercase;
   }
   &__tag-list {
     display: flex;
@@ -243,38 +234,16 @@ body {
     align-items: center;
     margin: 0;
     gap: 0 10px;
-    max-width: 100%;
-    overflow-x: auto;
   }
   &__tag-link {
     display: block;
-    text-align: center;
-    line-height: 1.3rem;
-    padding: 5px 10px;
+    padding: 10px;
     border-radius: 100rem;
-    font-size: 13px;
-    border: 1px solid #dee2e6;
-    transition: all 0.3s linear;
+    font-size: $mm-fs;
+    border: 1px solid $primary-border-input;
+    transition: $primary-linear;
     &:hover {
       color: $primary-text-blue;
     }
-  }
-}
-@media (max-width: 1023px) {
-  .highlight__header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 10px;
-    gap: 10px 0;
-  }
-  .highlight__tag-list {
-    gap: 0 5px;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-  }
-  .highlight__tag-link {
-    min-width: 160px;
-    padding: 5px;
   }
 }
