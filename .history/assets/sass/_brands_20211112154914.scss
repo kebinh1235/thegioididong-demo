@@ -1,0 +1,13 @@
+.brands {
+    .brands__header {
+        font-weight: bold;
+        font-size: 18px;
+        text-transform: uppercase;
+    }
+    .brands__slider.slick-initialized .slick-track {
+        --gap: 0 10px;
+        display: flex;
+        gap: calc(var(--gap) + 5px);
+        margin-left: -10px;
+    }
+}

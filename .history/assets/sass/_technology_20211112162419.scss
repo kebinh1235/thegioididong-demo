@@ -1,0 +1,25 @@
+.technology {
+    .technology__container {
+        display: flex;
+    }
+    .technology__news {
+        display: flex;
+        width: 70%;
+    }
+    .technology__news-big {
+        width: 70%;
+    }
+    .technology__news-big-desc {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .technology__news-big-time {
+        width: 70%;
+    }
+    .technology__news-small {
+        width: 30%;
+    }
+    .technology__app {
+        width: 30%;
+    }
+}

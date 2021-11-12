@@ -1,0 +1,35 @@
+.technology {
+    .technology__container {
+        display: flex;
+    }
+    .technology__news {
+        display: flex;
+        width: 70%;
+    }
+    .technology__news-big {
+        width: 70%;
+    }
+    .technology__news-big-desc {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .technology__news-big-time {
+        width: 70%;
+    }
+    .technology__news-small {
+        width: 30%;
+    }
+    .technology__news-small-info {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+    }
+    .technology__news-small-img {
+        width: 120px;
+        height: 70px;
+        border-radius: $primary-radius;
+    }
+    .technology__app {
+        width: 30%;
+    }
+}

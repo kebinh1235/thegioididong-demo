@@ -1,0 +1,25 @@
+.watch {
+  &__container {
+    display: flex;
+    background: #203e4e;
+    padding: 10px;
+    border-radius: $primary-radius;
+  }
+  &__img {
+    width: 222px;
+    height: auto;
+  }
+  &__content {
+    width: calc(100% - 222px);
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+  &__products {
+  }
+  &__content {
+    .watch__header {
+    }
+  }
+}

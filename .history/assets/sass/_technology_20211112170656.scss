@@ -1,0 +1,91 @@
+.technology {
+    .technology__container {
+        display: flex;
+        gap: 0 10px;
+    }
+    .technology__news {
+        width: 70%;
+        .technology__news-header {
+            margin-bottom: 10px;
+            span {
+                font-size: 18px;
+                font-weight: bold; 
+                margin-right: 10px;
+                text-transform: uppercase;
+            }
+            a {
+                color: $primary-text-blue;
+            }
+            i {
+                padding-top: 2px;
+            }
+        }
+        .technology__news-info {
+            display: flex;
+            gap: 0 10px;
+        }
+        .technology__app {
+            width: 30%;
+        }
+        .technololgy__news-big {
+            width: 60%;
+            img {
+                border-radius: $primary-radius;
+                overflow: hidden;
+                margin-bottom: 20px;
+            }
+        }
+        .technology__news-big-desc {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .technology__news-small {
+            width: 60%;
+        }
+        .technology__news-small {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px 0;
+        }
+        .technology__news-small-link {
+            display: flex;
+            align-items: center;
+            gap: 0 10px;
+        }
+        .technology__news-small-img {
+            width: 120px;
+            height: 70px;
+            border-radius: $primary-radius;
+        }
+        .technology__news-small-desc {
+            font-weight: 400;
+            font-size: $s-fs;
+            p {
+                text-align: justify;
+            }
+            span {
+                font-size: 10px;
+                color: gray;
+                margin-top: 5px;
+                display: block;
+            }
+        }
+    }
+    .technology__app {
+        .app__header {
+            span {
+                font-weight: bold;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+        }
+        .app__list {
+
+        }
+        .app__item {
+
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.technology {
+    .technology__container {
+        display: flex;
+    }
+    .technology__news {
+        width: 70%;
+        display: flex;
+        gap: 0 10px;
+    }
+    .technology__app {
+        width: 30%;
+    }
+    .technololgy__news-big {
+        width: 60%;
+        img {
+            border-radius: $primary-radius;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+    }
+    .technology__news-big-desc {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .technology__news-small {
+        width: 60%;
+    }
+    .technology__news-small {
+        width: 40%;
+    }
+    .technology__news-small-link {
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+    }
+    .technology__news-small-img {
+        width: 120px;
+        height: 70px;
+        border-radius: $primary-radius;
+    }
+    .technology__news-small-title {
+        font-weight: 400;
+        font-size: $s-fs;
+        span {
+            font-size: $s-fs;
+            color: gray;
+        }
+}

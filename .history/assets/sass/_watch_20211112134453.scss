@@ -1,0 +1,15 @@
+.watch {
+    &__container {
+        display: flex;
+        background: #203E4E;
+        padding: 10px;
+        border-radius: $primary-radius;
+    }
+    &__img {
+        width: 222px;
+        height: auto;
+    }
+    &__content {
+        width: calc(100% - 222px);
+    }
+}
