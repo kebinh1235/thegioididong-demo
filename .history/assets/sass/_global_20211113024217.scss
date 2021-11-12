@@ -79,7 +79,7 @@ body {
   -webkit-tap-highlight-color: none;
   text-transform: uppercase;
   font-size: $m-fs;
-  text-align: center;
+  text-center
 }
 .btn.btn-primary {
   background: $primary-btn-color;
@@ -90,7 +90,6 @@ body {
 }
 .btn.btn-outline {
   border: 1px solid #008847;
-  color: #008847;
 }
 .btn:focus {
   outline: none;

@@ -1,0 +1,89 @@
+.commercial {
+    & p {
+        margin: 0;
+    }
+  .commercial__container {
+    padding: 0 5px;
+    background: #008847;
+  }
+  .commercial__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+  }
+  .commercial__logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    padding: 0 30px;
+    position: relative;
+    .commercial__link {
+      img {
+        width: 150px;
+      }
+    }
+    span {
+      font-size: $primary-fs;
+      color: $primary-color;
+    }
+    .commercial__note {
+      font-size: $s-fs;
+      color: $white-color;
+      font-style: italic;
+    }
+  }
+  .commercial__close {
+    font-size: $s-fs;
+    color: $white-color;
+    .commercial__close-icon {
+      color: #000000;
+      background: #ffffff;
+      border-radius: 100rem;
+      font-size: $ss-fs;
+      padding: 3px 4px;
+    }
+  }
+  .commercial__content {
+    display: flex;
+    .commercial__voucher {
+        background: #FEFCEA;
+        border: 2px solid #DBB250;
+        width: 20%;
+        padding: 10px;
+        max-width: 190px;
+    }
+    .commercial__voucher-title {
+        margin-bottom: 15px;
+        font-size: $m-fs;
+        font-weight: bold;
+    }
+    .commercial__form {
+    }
+    .commercial__input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid $primary-border-input;
+        border-radius: #008847;
+        color: $text-color;
+    }
+    .commercial__content-note {
+    }
+    .commercial__product {
+        width: 80%;
+      .commercial__item {
+      }
+      .commercial__item-img {
+      }
+      .commercial__info {
+      }
+      .commercial__price {
+        .commercial__price-current {
+        }
+        span {
+        }
+      }
+    }
+  }
+}

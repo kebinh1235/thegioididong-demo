@@ -1,0 +1,81 @@
+.commercial {
+    .commercial__container {
+        padding: 0 5px;
+        background: #008847;
+    }
+    .commercial__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+    }
+    .commercial__logo {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        gap: 0 10px;
+        padding: 0 30px;
+        position: relative;
+        .commercial__link {
+            img {
+                width: 150px;
+            }
+        }
+        span {
+            font-size: $primary-fs;
+            color: $primary-color;
+        }
+        .commercial__note {
+            font-size: $s-fs;
+            color: $white-color;
+            font-style: italic;
+        }
+    }
+    .commercial__close {
+        font-size: $s-fs;
+        color: $white-color;
+        .commercial__close-icon {
+            color: $black-color;
+            background: $white-color;
+            border-radius: 100rem;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .commercial__content {
+        .commercial__voucher {
+
+        }
+        .commercial__voucher-title {
+
+        }
+        .commercial__form {
+            
+        }
+        .commercial__input {
+
+        }
+        .commercial__content-note {
+
+        }
+        .commercial__product {
+            .commercial__item {
+
+            }
+            .commercial__item-img {
+
+            }
+            .commercial__info {
+
+            }
+            .commercial__price {
+                .commercial__price-current {
+
+                }
+                span {
+
+                }
+            }
+        }
+    }
+}

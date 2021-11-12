@@ -15,45 +15,10 @@ body {
   height: 40px;
   width: 1px;
 }
-// Style Dots New 
-.dot-new {
-  background-color: $primary-color;
-  border-radius: 100%;
-  display: block;
-  left: 3px;
-  width: 8px;
-  height: 8px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  will-change: transform;
-}
-.dot-new-animation {
-  border: 1px solid #ffe66b;
-  background-color: rgba(255, 230, 107, 0.2);
-  border-radius: 100%;
-  display: block;
-  height: 8px;
-  opacity: 1;
-  -moz-animation: growUp 1.25s linear infinite;
-  -o-animation: growUp 1.25s linear infinite;
-  -webkit-animation: growUp 1.25s linear infinite;
-  animation: growUp 1.25s linear infinite;
-  width: 8px;
-}
 // Text hide
 .text-dots-1 {
   display:-webkit-box;
   -webkit-line-clamp: 1;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
-  color: $text-color;
-}
-.text-dots-2 {
-  display:-webkit-box;
-  -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -72,25 +37,13 @@ body {
   line-height: 1.2rem;
 }
 // Style Button
-.btn {
+.btn.btn-primary {
+  background: $primary-btn-color;
   border: none;
   outline: none;
   width: 100%;
   -webkit-tap-highlight-color: none;
   text-transform: uppercase;
-  font-size: $m-fs;
-  text-align: center;
-}
-.btn.btn-primary {
-  background: $primary-btn-color;
-}
-.btn.btn-disabled {
-  background: #BDBDBD;
-  color: $white-color;
-}
-.btn.btn-outline {
-  border: 1px solid #008847;
-  color: #008847;
 }
 .btn:focus {
   outline: none;
@@ -366,4 +319,27 @@ body {
     padding: 5px;
     min-width: 170px;
   }
+  .plan__main {
+    display: grid;
+    justify-content: flex-start;
+    grid-auto-columns: 300px;
+    grid-auto-flow: column;
+    grid-gap: 0 50px;
+    overflow: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 1rem;
+    grid-template-columns: unset;
+    }
+    .plan__main::-webkit-scrollbar {
+      display: none;
+      width: 0;
+    }
+    .plan__main > *{
+      scroll-snap-align: start;
+    }
 }
