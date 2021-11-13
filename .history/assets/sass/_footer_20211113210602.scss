@@ -1,0 +1,21 @@
+.footer {
+    &__container {
+
+    }
+    &__list {
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+
+    }
+    &__cooperate {
+        display: flex;
+        align-items: center;
+    }
+    &__link {
+        img {
+            flex: 1;
+        }
+    }
+}
