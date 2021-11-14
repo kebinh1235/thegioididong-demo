@@ -217,6 +217,7 @@ body {
   }
   &.product__list.slick-initialized .slick-track {
     display: flex;
+    width: unset;
   }
   &.product__gap.slick-initialized .slick-track {
     display: flex;
@@ -241,6 +242,7 @@ body {
   &__item {
     background: $white-color;
     padding: 10px;
+    width: unset;
     height: 100%;
     border-right: 1px solid $primary-border-input;
     border-bottom: 1px solid $primary-border-input;

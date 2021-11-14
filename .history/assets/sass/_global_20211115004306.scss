@@ -23,11 +23,7 @@ body {
     background: $white-color;
     z-index: 999;
     padding: 10px;
-    display: none;
     animation: transformTop .3s linear;
-    &.openMobile {
-      display: block;
-    }
   }
   &__close {
     font-size: $m-fs;
@@ -41,54 +37,11 @@ body {
     }
   }
 }
-// Style Category List
-.category {
-  padding: 0 10px;
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-  &__item {
-    width: calc(20% - 5px);
-    border-radius: 5px;
-    border: 1px solid $primary-border-input;
-    box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
-    color: #000;
-    text-align: center;
-    padding: 5px;
-    min-height: 40px;
-    line-height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  &__link {
-    font-size: $s-fs;
-  }
-  &__list-2 {
-    border-bottom: 4px solid $primary-border-input;
-    margin-bottom: 10px;
-  }
-  &__list-mobile {
-    margin: 0;
-  }
-  &__list-title {
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  &__list-mobile-item {
-    border-bottom: 1px solid $primary-border-input;
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-  &__list-mobile-link {
-    display: block;
-    padding: 10px 0;
-    font-size: $s-fs;
-  }
+.navbar__mobile {
+  display: none;
+}
+.navbar__mobile.openMobile {
+  display: block;
 }
 // Style Dots New 
 .dot-new {
@@ -176,6 +129,7 @@ body {
   color: $primary-color;
 }
 // Style Product Slider
+
 .banner__outside,
 .product__slider,
 .tabs__slider,

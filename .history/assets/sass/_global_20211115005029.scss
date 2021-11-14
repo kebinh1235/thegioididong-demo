@@ -43,10 +43,10 @@ body {
 }
 // Style Category List
 .category {
-  padding: 0 10px;
   &__list {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 10px;
     gap: 6px;
   }
   &__item {
@@ -65,28 +65,6 @@ body {
     position: relative;
   }
   &__link {
-    font-size: $s-fs;
-  }
-  &__list-2 {
-    border-bottom: 4px solid $primary-border-input;
-    margin-bottom: 10px;
-  }
-  &__list-mobile {
-    margin: 0;
-  }
-  &__list-title {
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  &__list-mobile-item {
-    border-bottom: 1px solid $primary-border-input;
-    &:last-child {
-      border-bottom: none;
-    }
-  }
-  &__list-mobile-link {
-    display: block;
-    padding: 10px 0;
     font-size: $s-fs;
   }
 }

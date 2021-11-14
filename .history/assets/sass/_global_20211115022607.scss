@@ -69,7 +69,6 @@ body {
   }
   &__list-2 {
     border-bottom: 4px solid $primary-border-input;
-    margin-bottom: 10px;
   }
   &__list-mobile {
     margin: 0;
@@ -80,9 +79,6 @@ body {
   }
   &__list-mobile-item {
     border-bottom: 1px solid $primary-border-input;
-    &:last-child {
-      border-bottom: none;
-    }
   }
   &__list-mobile-link {
     display: block;

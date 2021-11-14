@@ -67,27 +67,16 @@ body {
   &__link {
     font-size: $s-fs;
   }
-  &__list-2 {
-    border-bottom: 4px solid $primary-border-input;
-    margin-bottom: 10px;
-  }
-  &__list-mobile {
-    margin: 0;
-  }
   &__list-title {
     margin-bottom: 10px;
     font-weight: bold;
   }
   &__list-mobile-item {
     border-bottom: 1px solid $primary-border-input;
-    &:last-child {
-      border-bottom: none;
-    }
   }
   &__list-mobile-link {
     display: block;
-    padding: 10px 0;
-    font-size: $s-fs;
+    padding: 5px;
   }
 }
 // Style Dots New 

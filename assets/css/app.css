@@ -96,6 +96,16 @@ img {
     transition: all 0.3s linear;
   }
 }
+@keyframes transformTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
 @keyframes growUp {
   0% {
     opacity: 1;
@@ -188,6 +198,79 @@ body {
   background-color: #232323;
   height: 40px;
   width: 1px;
+}
+
+.navbar__mobile {
+  position: fixed;
+  inset: 0;
+  background: #ffffff;
+  z-index: 999;
+  padding: 10px;
+  display: none;
+  animation: transformTop 0.3s linear;
+}
+.navbar__mobile.openMobile {
+  display: block;
+}
+.navbar__close {
+  font-size: 14px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.navbar__close-icon {
+  padding: 10px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.category {
+  padding: 0 10px;
+}
+.category__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.category__item {
+  width: calc(20% - 5px);
+  border-radius: 5px;
+  border: 1px solid #dee2e6;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #000;
+  text-align: center;
+  padding: 5px;
+  min-height: 40px;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.category__link {
+  font-size: 12px;
+}
+.category__list-2 {
+  border-bottom: 4px solid #dee2e6;
+  margin-bottom: 10px;
+}
+.category__list-mobile {
+  margin: 0;
+}
+.category__list-title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.category__list-mobile-item {
+  border-bottom: 1px solid #dee2e6;
+}
+.category__list-mobile-item:last-child {
+  border-bottom: none;
+}
+.category__list-mobile-link {
+  display: block;
+  padding: 10px 0;
+  font-size: 12px;
 }
 
 .dot-new {
@@ -1293,31 +1376,6 @@ main {
 
   main {
     margin-top: 0;
-  }
-
-  .category__list {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 10px;
-    gap: 6px;
-  }
-  .category__item {
-    width: calc(20% - 5px);
-    border-radius: 5px;
-    border: 1px solid #dee2e6;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    color: #000;
-    text-align: center;
-    padding: 5px;
-    min-height: 40px;
-    line-height: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  .category__link {
-    font-size: 12px;
   }
 
   .product__list .product__img img {
