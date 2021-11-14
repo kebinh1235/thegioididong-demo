@@ -1,0 +1,152 @@
+// Mobile and Tablet
+@media (max-width: 1023px) {
+  .navbar {
+    &__mobile-icon {
+      font-size: 18px;
+    }
+  }
+  .banner {
+    &__primary {
+      width: 100%;
+      padding: 0;
+    }
+    &__link {
+      display: block;
+      height: 100%;
+      overflow: hidden;
+    }
+  }
+  .header {
+    &__logo {
+      width: 30px;
+    }
+    &__location {
+      width: 125px;
+    }
+    &__search {
+      width: 150px;
+    }
+  }
+  main {
+    margin-top: 0;
+  }
+  .category {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 10px;
+      gap: 6px;
+    }
+    &__item {
+      width: calc(20% - 5px);
+      border-radius: 5px;
+      border: 1px solid $primary-border-input;
+      box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+      color: #000;
+      text-align: center;
+      padding: 5px;
+      min-height: 40px;
+      line-height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    &__link {
+      font-size: $s-fs;
+    }
+  }
+  .product__list {
+    .product__img {
+      img {
+        height: 120px;
+      }
+    }
+    .product__compare {
+      display: none;
+    }
+  }
+  .highlight__header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 10px;
+    gap: 10px 0;
+  }
+  .highlight__tag-list {
+    gap: 0 5px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .highlight__tag-link {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 175px;
+  }
+  .technology {
+    &__container {
+      flex-wrap: wrap;
+    }
+    &__news {
+      width: 100%;
+      margin-bottom: 30px;
+      &-info {
+        width: 100%;
+      }
+      &-small {
+        width: 100%;
+      }
+    }
+    &__app {
+      width: 100%;
+      .app__item {
+        .app__img {
+          img {
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+// Tablet
+@media (min-width: 740px) and (max-width: 1023px) {
+  .header {
+    &__top {
+      padding: 60px 10px 10px;
+    }
+    &__navbar-item-tag-sale {
+      top: 5px;
+      right: 3px;
+    }
+  }
+  .category {
+    &__link {
+      font-size: $m-fs;
+    }
+  }
+}
+// Mobile
+@media (max-width: 739px) {
+  .header {
+    &__top {
+      padding: 12px 10px 5px;
+    }
+    &__location {
+      width: 60px;
+    }
+    &__cart {
+      border: none;
+      padding: 0;
+      width: 30px;
+      font-size: 18px;
+    }
+    &__navbar-item-tag-sale {
+      top: 2px;
+      right: 1px;
+      padding: 0px 4px;
+    }
+  }
+}

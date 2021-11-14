@@ -1,9 +1,0 @@
-@function rem($size) {
-    $remValue: ($size / 16) + rem; 
-    @return $remValue;
-}
-
-@function vw($size, $width) {
-    $vwValue: ($size / $width * 100) + vw; 
-    @return $vwValue;
-}

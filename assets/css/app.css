@@ -432,6 +432,9 @@ body {
 .product__label.temp1 {
   background: linear-gradient(to right, #ef3006, #c60004);
 }
+.product__label.temp4 {
+  background: linear-gradient(to right, #3bacf0, #1b6dc1);
+}
 .product__label.temp5 {
   background: linear-gradient(to right, #faab08, #d42611);
 }
@@ -845,6 +848,10 @@ body {
   z-index: 999;
 }
 
+main {
+  margin-top: 25px;
+}
+
 .banner .container {
   display: flex;
 }
@@ -976,114 +983,114 @@ body {
 .technology {
   margin-bottom: 20px;
 }
-.technology .technology__container {
+.technology__container {
   display: flex;
 }
-.technology .technology__news {
+.technology__news {
   width: 70%;
   padding-right: 5px;
 }
-.technology .technology__news .technology__news-header {
+.technology__news .technology__news-header {
   margin-bottom: 10px;
 }
-.technology .technology__news .technology__news-header span {
+.technology__news .technology__news-header span {
   font-size: 18px;
   font-weight: bold;
   margin-right: 10px;
   text-transform: uppercase;
 }
-.technology .technology__news .technology__news-header a {
+.technology__news .technology__news-header a {
   color: #0069db;
 }
-.technology .technology__news .technology__news-header i {
+.technology__news .technology__news-header i {
   padding-top: 2px;
 }
-.technology .technology__news .technology__news-info {
+.technology__news .technology__news-info {
   display: flex;
 }
-.technology .technology__news .technololgy__news-big {
+.technology__news .technololgy__news-big {
   width: 60%;
   padding-right: 5px;
 }
-.technology .technology__news .technololgy__news-big img {
+.technology__news .technololgy__news-big img {
   border-radius: 5px;
   overflow: hidden;
   margin-bottom: 20px;
 }
-.technology .technology__news .technology__news-big-desc {
+.technology__news .technology__news-big-desc {
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.technology .technology__news .technology__news-small {
+.technology__news .technology__news-small {
   width: 40%;
   display: flex;
   flex-direction: column;
   gap: 10px 0;
   padding-left: 5px;
 }
-.technology .technology__news .technology__news-small-link {
+.technology__news .technology__news-small-link {
   display: flex;
   align-items: center;
   gap: 0 10px;
 }
-.technology .technology__news .technology__news-small-img {
+.technology__news .technology__news-small-img {
   width: 120px;
   height: 70px;
   border-radius: 5px;
 }
-.technology .technology__news .technology__news-small-desc {
+.technology__news .technology__news-small-desc {
   font-weight: 400;
   font-size: 12px;
 }
-.technology .technology__news .technology__news-small-desc p {
+.technology__news .technology__news-small-desc p {
   text-align: justify;
 }
-.technology .technology__news .technology__news-small-desc span {
+.technology__news .technology__news-small-desc span {
   font-size: 10px;
   color: gray;
   margin-top: 5px;
   display: block;
 }
-.technology .technology__app {
+.technology__app {
   width: 30%;
   position: relative;
   padding-left: 5px;
 }
-.technology .technology__app .app__header {
+.technology__app .app__header {
   margin-bottom: 10px;
 }
-.technology .technology__app .app__header span {
+.technology__app .app__header span {
   font-weight: bold;
   font-size: 18px;
   text-transform: uppercase;
   margin-right: 10px;
 }
-.technology .technology__app .app__header a {
+.technology__app .app__header a {
   color: #0069db;
 }
-.technology .technology__app .app__item .app__img img {
+.technology__app .app__item .app__img img {
   width: 400px;
   object-fit: cover;
   border-radius: 5px;
 }
-.technology .technology__app .app__item .app__info {
+.technology__app .app__item .app__info {
   margin-top: 10px;
 }
-.technology .technology__app .app__item .app__info .app__info-header {
+.technology__app .app__item .app__info .app__info-header {
   display: flex;
   gap: 0 10px;
 }
-.technology .technology__app .app__item .app__info .app__info-header .app__info-img {
+.technology__app .app__item .app__info .app__info-header .app__info-img {
   width: 60px;
   height: 60px;
   border-radius: 5px;
 }
-.technology .technology__app .app__item .app__info .app__info-header .app__info-desc .app__info-desc-title {
+.technology__app .app__item .app__info .app__info-header .app__info-desc .app__info-desc-title {
   font-weight: bold;
   font-size: 14px;
 }
-.technology .technology__app .app__item .app__info .app__info-header .app__info-desc .app__info-label .app__info-label-tag {
+.technology__app .app__item .app__info .app__info-header .app__info-desc .app__info-label .app__info-label-tag {
   padding: 5px;
   background: #07a358;
   color: #ffffff;
@@ -1091,11 +1098,11 @@ body {
   font-size: 12px;
   border-radius: 5px;
 }
-.technology .technology__app .app__item .app__info .app__info-header .app__info-desc .app__info-label span {
+.technology__app .app__item .app__info .app__info-header .app__info-desc .app__info-label span {
   line-height: 20px;
   font-size: 13px;
 }
-.technology .technology__app .app__item .app__info-link a {
+.technology__app .app__item .app__info-link a {
   display: block;
   color: #0069db;
   margin-top: 10px;
@@ -1225,7 +1232,7 @@ body {
 }
 
 .footer {
-  padding: 20px 0 10px;
+  padding: 20px 10px 10px;
   margin-top: 30px;
   border-top: 1px solid #dee2e6;
 }
@@ -1260,6 +1267,10 @@ body {
 }
 
 @media (max-width: 1023px) {
+  .navbar__mobile-icon {
+    font-size: 18px;
+  }
+
   .banner__primary {
     width: 100%;
     padding: 0;
@@ -1268,6 +1279,45 @@ body {
     display: block;
     height: 100%;
     overflow: hidden;
+  }
+
+  .header__logo {
+    width: 30px;
+  }
+  .header__location {
+    width: 125px;
+  }
+  .header__search {
+    width: 150px;
+  }
+
+  main {
+    margin-top: 0;
+  }
+
+  .category__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 10px;
+    gap: 6px;
+  }
+  .category__item {
+    width: calc(20% - 5px);
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    min-height: 40px;
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .category__link {
+    font-size: 12px;
   }
 
   .product__list .product__img img {
@@ -1292,8 +1342,143 @@ body {
   }
 
   .highlight__tag-link {
-    padding: 5px;
-    min-width: 170px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 175px;
+  }
+
+  .watch__container {
+    flex-direction: column;
+  }
+  .watch__img {
+    width: 100%;
+  }
+  .watch__content {
+    width: 100%;
+  }
+
+  .brands__container {
+    padding: 0 10px;
+  }
+
+  .technology__container {
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+  .technology__news {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .technology__news-info {
+    width: 100%;
+  }
+  .technology__news .technology__news-small {
+    width: 100%;
+    padding: 0;
+  }
+  .technology__app {
+    width: 100%;
+    padding: 0;
+  }
+  .technology__app .app__item .app__img img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .commercial .commercial__content {
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+  .commercial .commercial__content .commercial__voucher {
+    min-width: 190px;
+  }
+  .commercial .commercial__content .commercial__product .commercial__item {
+    min-width: 135px;
+  }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+  .header__top {
+    padding: 60px 10px 10px;
+  }
+  .header__navbar-item-tag-sale {
+    top: 5px;
+    right: 3px;
+  }
+
+  .category__link {
+    font-size: 14px;
+  }
+
+  .commercial .commercial__logo {
+    flex-direction: initial;
+  }
+}
+@media (max-width: 739px) {
+  .header__top {
+    padding: 12px 10px 5px;
+  }
+  .header__location {
+    width: 60px;
+  }
+  .header__cart {
+    border: none;
+    padding: 0;
+    width: 30px;
+    font-size: 18px;
+  }
+  .header__navbar-item-tag-sale {
+    top: 2px;
+    right: 1px;
+    padding: 0px 4px;
+  }
+
+  .technology__news {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .technology__news-info {
+    width: 100%;
+  }
+  .technology__news .technology__news-small {
+    width: 100%;
+    flex-direction: row;
+    padding: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 0 8px;
+  }
+  .technology__news .technology__news-small-link {
+    min-width: 120px;
+    flex-direction: column;
+  }
+  .technology__news .technology__news-small-desc p {
+    text-align: start;
+  }
+
+  .commercial .commercial__logo {
+    flex-direction: column;
+    align-items: start;
+    gap: 5px 0;
+  }
+  .commercial .commercial__logo .commercial__link img {
+    width: 120px;
+  }
+  .commercial .commercial__logo span {
+    font-size: 12px;
+  }
+
+  .watch .watch__item {
+    flex: 1;
+  }
+  .watch .watch__item a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    line-height: 20px;
+    min-height: 40px;
+    text-align: center;
   }
 }
 
