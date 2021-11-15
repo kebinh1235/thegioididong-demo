@@ -194,6 +194,10 @@ body {
   margin: 0 auto;
 }
 
+main {
+  margin-top: 25px;
+}
+
 .separator-y {
   background-color: #232323;
   height: 40px;
@@ -933,10 +937,6 @@ body {
   z-index: 999;
 }
 
-main {
-  margin-top: 25px;
-}
-
 .banner .container {
   display: flex;
 }
@@ -1067,7 +1067,6 @@ main {
 
 .technology {
   margin-bottom: 20px;
-  padding: 0 15px;
 }
 .technology__container {
   display: flex;
