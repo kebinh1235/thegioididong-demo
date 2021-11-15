@@ -1349,6 +1349,16 @@ main {
   color: red;
 }
 
+@media (min-width: 1024px) and (max-width: 1170px) {
+  .banner__link {
+    height: 300px;
+  }
+
+  .banner__small-item {
+    width: 145px;
+    height: 145px;
+  }
+}
 @media (max-width: 1023px) {
   .navbar__mobile-icon {
     font-size: 18px;

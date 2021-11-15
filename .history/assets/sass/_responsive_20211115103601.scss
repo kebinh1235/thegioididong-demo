@@ -1,11 +1,16 @@
 // PC < 
-@media (min-width: 1024px) and (max-width: 1170px) {
-  .banner__link {
-    height: 300px;
-  }
-  .banner__small-item {
-    width: 145px;
-    height: 145px;
+@media (min-width: 1024px) and(max-width: 1170px) {
+  .banner {
+    &__primary {
+      width: 100%;
+      padding: 0;
+    }
+    &__list {
+
+    }
+    &__link {
+      height: 290px;
+    }
   }
 }
 // Mobile and Tablet
